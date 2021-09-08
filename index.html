@@ -5,6 +5,18 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <style>
+
+@media only screen and (min-width: 768px){
+    body {
+        background-color:blue;
+    }
+}
+#home{
+  display:flex
+}
+
+  </style>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -29,13 +41,15 @@
       </div>
       <div id="about"></div>
       <div id="services"></div>
-      <form id="form">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input
           id="email"
           type="email"
+          name="email"
           placeholder="enter your email"
           required
         />
+        <input type="submit" id="submit" name="submit">
       </form>
     </main>
     <script src="js/index.js"></script>
